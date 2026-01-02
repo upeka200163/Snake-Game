@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="g_head">
+        Speed
+        <input type="number" id="g_speed" value="5" min="1" max="9">
+        <button id="g_start">Start</button>
+        <button id="g_restart">Restart</button>
+        <div class="score">
+            Score: <span id="score">0</span> |
+            High Score: <span id="highscore">0</span>
+        </div>
+    </div>
+
+    <canvas id="g_area"></canvas>
+
+    <p class="hint">⬆ ⬇ ⬅ ➡ to move | Space = Pause</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
